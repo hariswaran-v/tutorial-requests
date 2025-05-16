@@ -1,6 +1,6 @@
 //server router
 import express from "express";
-import mainRouter from "./routers/main.js";
+import mainRouter from "./routers/index.router.js";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
@@ -14,10 +14,7 @@ server.use("/", mainRouter);
 
 //invalid path specified show this
 server.use((req, res) => {
-  return res.json({
-    success: false,
-    message: "Empty here! Go and get a life!",
-  });
+  return res.status(404);
 });
 
 server.listen(SERVER_PORT, () => {

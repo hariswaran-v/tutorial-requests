@@ -4,7 +4,7 @@ import {
   deleteRequestById,
   getAllRequestData,
   updateDataById,
-} from "../models/user-request.js";
+} from "../services/tutorialRequestServices.js";
 const router = express.Router();
 
 router.get("/", (req, res) => {
