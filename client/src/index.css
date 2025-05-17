@@ -5,3 +5,7 @@
 nav .active {
   @apply text-blue-500;
 }
+
+time {
+  @apply bg-green-300 p-1 rounded;
+}

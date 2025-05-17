@@ -6,7 +6,7 @@ const tutRequests = new Schema({
     type: String,
     required: true,
     minlength: 2,
-    maxlength: 10,
+    maxlength: 30,
   },
   title: {
     type: String,

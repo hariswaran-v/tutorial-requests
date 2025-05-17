@@ -57,6 +57,8 @@ const TheNavbar = () => {
                 <NavLink
                   to="https://github.com/hariswaran-v"
                   className="py-2 px-3 bg-blue-800  rounded text-white flex items-center hover:bg-blue-900 cursor-pointer "
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {" "}
                   <svg
