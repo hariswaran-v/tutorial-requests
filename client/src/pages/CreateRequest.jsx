@@ -20,14 +20,17 @@ const CreateRequest = () => {
   });
 
   const sendToServer = async (data) => {
-    const response = await fetch("http://localhost:3000/create", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      "https://tutorial-requests-dhcd.onrender.com/create",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
     console.log("Server response body:", response);
 
     if (response.status === 200) {

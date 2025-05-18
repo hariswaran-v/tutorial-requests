@@ -5,7 +5,9 @@ const App = () => {
   const [requestedData, setRequestedData] = useState([]);
 
   async function fetchRequest() {
-    const requestAPIData = await fetch("http://localhost:3000/requests");
+    const requestAPIData = await fetch(
+      "https://tutorial-requests-dhcd.onrender.com/requests"
+    );
     const data = await requestAPIData.json();
     setRequestedData(data);
   }
