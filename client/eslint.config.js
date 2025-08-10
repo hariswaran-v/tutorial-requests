@@ -31,6 +31,11 @@ export default [
         "warn",
         { allowConstantExport: true },
       ],
+      // React 17+ JSX transform does not require React in scope
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
+      // Allow apostrophes in text nodes
+      "react/no-unescaped-entities": "off",
     },
     settings: {
       react: {
