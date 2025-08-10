@@ -22,19 +22,15 @@ export default [
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
     },
-    extends: [
-      "plugin:react/recommended",
-      // you can also extend js.configs.recommended if needed here
-    ],
     rules: {
       ...js.configs.recommended.rules,
+      ...react.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
       "no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
       ],
-      // optionally add or override react rules here
     },
     settings: {
       react: {
