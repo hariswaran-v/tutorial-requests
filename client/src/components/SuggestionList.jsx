@@ -28,7 +28,7 @@ SuggestionList.propTypes = {
   technology: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  created_at: PropTypes.func.isRequired,
+  created_at: PropTypes.string.isRequired,
 };
 
 export default SuggestionList;
